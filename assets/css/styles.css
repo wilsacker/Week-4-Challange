@@ -17,16 +17,19 @@ body {
   font-family: sans-serif;
 }
 
-h2,
+h1 {
+  font-size: 270%;
+}
+
+h2 {
+  font-size: 150%;
+}
+
 h3,
 h4,
 h5,
 h6 {
   font-size: 100%;
-}
-
-h1 {
-    font-size: 270%;
 }
 
 /* Matches the font of special elements to the rest of the page */
@@ -48,6 +51,24 @@ ul {
   list-style: none;
 }
 /* reset ends here */
+:root {
+  --light: white;
+  --dark: rgba(31, 30, 30, 0.896);
+}
+
+.light header,
+.light main,
+.light footer {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.dark header,
+.dark main,
+.dark footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
 
 /* selectors */
 header {
@@ -59,58 +80,20 @@ header > button {
   margin: 20px 20px 0px 0px;
 }
 
-main {
-  height: calc(100vh - 6rem);
-  display: flex;
-  justify-content: space-between;
-}
-
 aside {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(blue, blueviolet);
+  background: linear-gradient(blue, yellow);
   clip-path: circle(18rem at center);
 }
 
 aside > h1 {
-    color: white;
-    text-shadow: 1px 1px 1px black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
-section {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  flex-flow: column wrap;
-  padding: 2rem;
-}
-
-section > h2 {
-  display: flex;
-  justify-content: center;
-}
-
-aside,
-section {
-  flex: 1 1 50%;
-}
-
-form {
-  display: flex;
-  flex-flow: column wrap;
-  position: relative;
-  margin: 15px;
-}
-
-form > *:not(label) {
-  margin: 1rem 0px;
-}
-
-input > textarea {
-  height: 20px;
-}
 /* classes */
 
 /* ID's */

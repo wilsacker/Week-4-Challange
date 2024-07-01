@@ -1,0 +1,47 @@
+main {
+    height: calc(100vh - 6rem);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: column wrap;
+    padding: 2rem;
+  }
+  
+  section > h2 {
+    display: flex;
+    justify-content: center;
+  }
+  
+  aside,
+  section {
+    flex: 1 1 50%;
+  }
+  
+  form {
+    display: flex;
+    flex-flow: column wrap;
+    position: relative;
+    margin: 15px;
+  }
+  
+  form > *:not(label) {
+    margin: 1rem 0px;
+  }
+  
+  input > textarea {
+    height: 20px;
+  }
+
+  form > button {
+    background-color: var(--dark);
+    color: var(--light);
+    height: 30px;
+    font-size: 12px;
+  }
+
+  
