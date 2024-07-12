@@ -3,16 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>My First Blog</title>
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
   </head>
-
   <body>
     <header>
-      <!-- night mode -->
-      <button id="toggle">Switch</button>
-    </header>
+        <h2> </h2>
+        <nav>
+          <!-- night mode -->
+          <button id="toggle">Switch</button>
+        </nav>
+      </header>
     <main>
       <aside class="circle">
         <!-- my first blog image h1 text-->
@@ -23,9 +25,9 @@
         <!-- form -->
         <form>
           <label for="username">Username</label>
-          <input type="text" placeholder="Username..." />
+          <input type="text" id="username" placeholder="Username..." />
           <label for="title">Title</label>
-          <input type="text" placeholder="Title..." />
+          <input type="text" id="title" placeholder="Title..." />
           <label for="content">Content</label>
           <textarea
             type="text"
@@ -33,12 +35,13 @@
             placeholder="Content..."
             rows="3"
           ></textarea>
+          <p id="error"></p>
           <!-- submit button -->
           <button id="submitButton">Submit</button>
         </form>
       </section>
     </main>
-    <script src="./assets/js/form.js"></script>
     <script src="./assets/js/logic.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>

@@ -1,7 +1,6 @@
 /* reset starts here */
 /* Resets the box size of every element */
 * {
-  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -13,6 +12,7 @@ html {
 
 body {
   min-height: 100%;
+  margin: 0;
   line-height: 1;
   font-family: sans-serif;
 }
@@ -53,7 +53,7 @@ ul {
 /* reset ends here */
 :root {
   --light: white;
-  --dark: rgba(31, 30, 30, 0.896);
+  --dark: black;
 }
 
 .light header,
@@ -73,11 +73,24 @@ ul {
 /* selectors */
 header {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
+}
+
+header > h2,
+nav {
+  padding: 20px;
 }
 
 header > button {
-  margin: 20px 20px 0px 0px;
+  margin: 20px;
+}
+
+main {
+  height: calc(100vh - 6rem);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  border-top: double 1rem;
 }
 
 aside {
@@ -94,6 +107,19 @@ aside > h1 {
   text-shadow: 1px 1px 1px black;
 }
 
+
+#love {
+    margin: 25px;
+    text-align: center;
+}
+
+address {
+    margin-left: 50px;
+}
+
+address > ul > li {
+    padding-top: 10px;
+}
 /* classes */
 
 /* ID's */
